@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopEase | Modern E-commerce</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo">ShopEase</div>
+    <nav class="main-nav">
+      <a href="#featured">Featured</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+    </nav>
+    <button class="cart-button" id="cartButton">
+      Cart (<span id="cartCount">0</span>)
+    </button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">New arrivals</p>
+        <h1>Shop the latest modern essentials.</h1>
+        <p>Fast checkout, curated styles, and deals across home, fashion, and accessories.</p>
+        <a href="#products" class="button button-primary">Browse products</a>
+      </div>
+      <div class="hero-image"></div>
+    </section>
+
+    <section class="section" id="featured">
+      <div class="section-head">
+        <h2>Featured picks</h2>
+        <p>Designed to make your daily routine feel premium.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card">
+          <h3>Free Shipping</h3>
+          <p>On all orders over $50, delivered in 2-3 business days.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Easy Returns</h3>
+          <p>30-day return policy with simple, no-hassle processing.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Secure Payments</h3>
+          <p>Checkout safely with card, Apple Pay, Google Pay, or PayPal.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="products">
+      <div class="section-head">
+        <h2>Popular products</h2>
+        <p>Shop top-rated items in fashion, tech, and home.</p>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div>
+        <h2>Why ShopEase?</h2>
+        <p>We create a simple shopping experience with transparent pricing, curated inventory, and fast delivery. Explore a clean storefront for every lifestyle.</p>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-drawer hidden" id="cartDrawer">
+    <div class="cart-header">
+      <h2>Your cart</h2>
+      <button class="close-cart" id="closeCart">×</button>
+    </div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-footer">
+      <div class="total-row">
+        <span>Total</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <button class="button button-primary">Checkout</button>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <p>© 2026 ShopEase. Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
